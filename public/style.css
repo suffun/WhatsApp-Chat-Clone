@@ -195,3 +195,84 @@ button:hover {
     color: #ef5350;
     text-decoration: underline;
 }
+
+/* New Chat Page Styling */
+.new-chat-container {
+    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.new-chat-container h3 {
+    color: #075e54;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.new-chat-container input, 
+.new-chat-container textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: inherit;
+    box-sizing: border-box; /* Critical for layout */
+    background-color: #fcfcfc;
+}
+
+.new-chat-container input:focus, 
+.new-chat-container textarea:focus {
+    outline: none;
+    border-color: #25d366;
+    background-color: #fff;
+}
+
+.create-btn {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.create-btn:hover {
+    background-color: #128c7e;
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #075e54;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
