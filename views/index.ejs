@@ -19,10 +19,19 @@
       </div>
       <div class="msg">
         <p>Msg : <%=chat.msg %></p>
+        <form method="GET" action="/chats/<%=chat._id %>/edit">
+            <button>Edit</button>
+        </form>
       </div>
       <p>Received By : <%=chat.to %></p>
-      <hr>
+   
     </div>
+    <div>
+        <p>Time : <%=chat.created_at.toString().split(" ")[4] %></p>
+        <p>Time : <%=chat.created_at.toString().split(" ").slice(0, 4).join(" ") %></p>
+        
+    </div>
+       <hr>
     <%}%>
   </body>
 </html>
