@@ -9,32 +9,36 @@
   
   <body>
     <h1>All Chats</h1>
-    <form method="GET"  action="/chats/new">
+    <form method="GET" action="/chats/new">
         <button class="new">New chat</button>
     </form>
-    <%for(let chat of chats){%>
-    <div>
-      <div class="from">
-        <p>From : <%=chat.from %></p>
-      </div>
-      <div class="msg">
-        <p>Msg : <%=chat.msg %></p>
-        <form method="GET" action="/chats/<%=chat._id %>/edit">
-            <button>Edit</button>
-        </form>
-        <form method="POST" action="/chats/<%= chat._id %>?_method=DELETE">
-            <button>Delete</button>
-        </form>
-      </div>
-      <p>Received By : <%=chat.to %></p>
-   
+
+    <% for(let chat of chats){ %>
+    <div class="chat-box">
+        <div class="from">
+            <p>From: <%= chat.from %></p>
+        </div>
+
+        <div class="msg">
+            <p><%= chat.msg %></p>
+        </div>
+
+        <p class="to-info">To: <%= chat.to %></p>
+
+        <div class="actions">
+            <form method="GET" action="/chats/<%=chat._id %>/edit">
+                <button class="edit-btn">Edit</button>
+            </form>
+            <form method="POST" action="/chats/<%= chat._id %>?_method=DELETE">
+                <button class="delete-btn">Delete</button>
+            </form>
+        </div>
+
+        <div class="time-container">
+            <p><%= chat.created_at.toString().split(" ").slice(0, 4).join(" ") %> | 
+               <%= chat.created_at.toString().split(" ")[4] %></p>
+        </div>
     </div>
-    <div>
-        <p>Time : <%=chat.created_at.toString().split(" ")[4] %></p>
-        <p>Time : <%=chat.created_at.toString().split(" ").slice(0, 4).join(" ") %></p>
-        
-    </div>
-       <hr>
-    <%}%>
-  </body>
+    <% } %>
+</body>
 </html>

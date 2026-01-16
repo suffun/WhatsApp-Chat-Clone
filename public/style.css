@@ -1,5 +1,111 @@
-.new{
-    height : 50px;
-    width : 50px;
-    background-color : red;
+/* General Page Styling */
+body {
+    background-color: #e5ddd5; /* Classic WhatsApp background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+h1 {
+    color: #075e54;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* New Chat Button */
+.new {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+}
+
+.new:hover {
+    background-color: #128c7e;
+}
+
+/* Chat Card/Bubble Container */
+.chat-box {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+/* Sender & Receiver Styling */
+.from p {
+    margin: 0;
+    font-weight: bold;
+    color: #075e54;
+    font-size: 0.9rem;
+}
+
+.to-info {
+    font-style: italic;
+    color: #555;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+/* Message Content */
+.msg p {
+    margin: 10px 0;
+    color: #333;
+    font-size: 1.05rem;
+}
+
+/* Time/Date Styling */
+.time-container {
+    text-align: right;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+
+.time-container p {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #888;
+}
+
+/* Action Buttons (Edit/Delete) */
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.actions button {
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: opacity 0.2s;
+}
+
+.edit-btn {
+    background-color: #34b7f1;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #ef5350;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
