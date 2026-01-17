@@ -11,13 +11,8 @@ Built to practice RESTful CRUD operations.
 🛠 Tech Stack
 
 Node.js – Runtime environment
-
 Express.js – Server framework
-
 MongoDB – Database
-
 Mongoose – ODM for MongoDB
-
 EJS / HTML – Templating
-
 CSS – Styling
