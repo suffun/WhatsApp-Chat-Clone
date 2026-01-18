@@ -14,5 +14,5 @@ Node.js – Runtime environment
 Express.js – Server framework
 MongoDB – Database
 Mongoose – ODM for MongoDB
-EJS / HTML – Templating
+EJS – Templating
 CSS – Styling
